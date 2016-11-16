@@ -9,10 +9,9 @@ import numpy as np
 import csv
 #from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
-from numpy import savetxt
 
-training = pd.read_csv('train.csv', header=0, na_values=['NA'])
-test = pd.read_csv('test.csv')
+training = pd.read_csv('../data/train.csv', header=0, na_values=['NA'])
+test = pd.read_csv('../data/test.csv')
 
 #drop duplicate columns
 remove = []
